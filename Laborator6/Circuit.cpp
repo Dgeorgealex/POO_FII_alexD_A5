@@ -29,7 +29,7 @@ void Circuit::SetLength(int x)
 void Circuit::Race()
 {
 	for (int i = 0; i < index; i++)
-		vector[i]->go(lenght);
+		vector[i]->go(lenght, vreme);
 }
 
 void Circuit::ShowFinalRanks()
@@ -52,4 +52,9 @@ void Circuit::ShowWhoDidNotFinish()
 			cout << '\n';
 		}
 	cout << '\n';
+}
+
+void Circuit::SetWeather(Weather a)
+{
+	vreme = a;
 }

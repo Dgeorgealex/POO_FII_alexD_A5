@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Weather.h"
 #include "Dacia.h"
 #include "Toyota.h"
 #include "Circuit.h"
@@ -15,7 +16,7 @@ int main()
 
 	c.SetLength(100);
 
-	//c.SetWeather(Weather::Rain);
+	c.SetWeather(Weather::Sun);
 	c.AddCar(new Dacia());
 	c.AddCar(new Toyota());
 	c.AddCar(new Mercedes());
